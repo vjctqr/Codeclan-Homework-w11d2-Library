@@ -20,4 +20,10 @@ public class Library {
         return this.books.size();
     }
 
+    public void addBook(Book book){
+        if (this.bookCount() < this.stock){
+            this.books.add(book);
+        }
+    }
+
 }
