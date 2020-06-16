@@ -24,6 +24,11 @@ public class BookTest {
         assertEquals("Alxander McCall Smith", book.getAuthor());
     }
 
+    @Test
+    public void hasGenre(){
+        assertEquals("Humorous Fiction", book.getGenre());
+    }
+
 
 
 }
