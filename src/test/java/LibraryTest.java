@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LibraryTest {
 
@@ -13,5 +16,11 @@ public class LibraryTest {
     public void before(){
         library = new Library("Coolibrary", 4);
     }
+
+    @Test
+    public void bookCountStartsAt0(){
+        assertEquals(0, library.bookCount());
+    }
+
 
 }
