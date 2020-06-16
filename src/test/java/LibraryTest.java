@@ -20,13 +20,17 @@ public class LibraryTest {
         bornToRun = new Book("Born To Run", "Christopher McDoughall", "Running and Jogging");
         twentyChickensForASaddle = new Book("Twenty Chickens For A Saddle", "Robin Scott", "Social Biography");
         scotlandStreet = new Book("Scotland Street", "Alexander McCall Smith", "Humorous Fiction");
-
-
     }
 
     @Test
     public void bookCountStartsAt0(){
         assertEquals(0, library.bookCount());
+    }
+
+    @Test
+    public void canAddBooks(){
+        library.addBook(book);
+        assertEquals(1, library.bookCount());
     }
 
 
