@@ -33,5 +33,15 @@ public class LibraryTest {
         assertEquals(1, library.bookCount());
     }
 
+    @Test
+    public void cantAddBooks(){
+        library.addBook(book);
+        library.addBook(eatAndRun);
+        library.addBook(bornToRun);
+        library.addBook(twentyChickensForASaddle);
+        library.addBook(scotlandStreet);
+        assertEquals(4, library.bookCount());
+    }
+
 
 }
