@@ -11,6 +11,7 @@ public class LibraryTest {
 
     @Before
     public void before(){
-        library = new Library("Coolibrary")
+        library = new Library("Coolibrary", 4);
     }
+
 }
